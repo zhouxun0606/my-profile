@@ -1,0 +1,68 @@
+<html></html>
+  <head>
+    <title>My profile</title>
+    <meta charset="utf-8">  <!-- 设置网页的字符编码为UTF-8,保证网页能正确显示中文等字符 -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,500,700,900" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">            <!--when you use CSS, you need to link to CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4498e75511.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  </head>
+  <body>     <!--网页主要内容部分-->
+
+    <div class="container">   <!--class="container"意味着这个div元素有一个css类的container，可以在css中定义他的样式-->
+    <div class="card-white" id="introduction">  <!--前面部分指创建了一个白色的背景卡片，后面指为该卡片定义了一个独特的标识符-->
+        <h1>Hello, I'm Zhou Xun! </h1>   <!--主标题-->
+        <img src="images/mee.jpg" class="img-triangle" width="100px" alt="Zhou Xun">  <!--src表示图片路径，class定义了（图片样式），width设置了（图片）宽度，alt指当图片无法加载显示的替代文本-->
+        <p>   <!--段落文本-->
+            Hi!  My name is Zhou Xun. I am 24 years old and come from China.
+        </p>
+        <a href="#" class="btn-yellow">Find me</a>  <!--这里的class给按钮添加了蓝色的css样式-->
+      </div>
+      <div class="card-white">
+        <h2>Photography</h2> 
+        <p>
+          I am passionate about <strong>Photography</strong>.
+        </p>
+      </div>
+      <div class="card-white">
+        <h2>Competiton</h2>
+        <p>
+          I like watching <strong>NBA, MOTOGP</strong> games.
+        </p>
+      </div>
+      <div class="card-white">
+        <h2>Music</h2>
+        <p>
+          I love <strong>Justin Bieber's Songs</strong>.
+        </p>
+      </div>
+      <div class="card-white">
+        <h2>Follow me</h2>
+        <ul class="list-inline">
+          <li>
+            <a href="https://www.linkedin.com/in/%E8%BF%85-%E5%91%A8-67ab8932a/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://m.weibo.cn/profile/6200660834" target="_blank">
+                <i class="fa-brands fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/imnot.mattia/?next=%2F" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>         <!--     <h2>Follow me</h2>: 标题，表明这个部分是社交媒体链接。
+                            <ul class="list-inline">: 创建了一个行内列表，列表项水平排列。
+                            <li>: 列表项。
+                            <a href="...">: 每个<a>标签包含一个超链接，target="_blank"表示点击链接时将在新标签页打开。
+                    -->
+
+  </body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    background-color:rgb(52, 121, 40);
+    color: rgb(178, 161, 7);  /*文本颜色*/
+    font-size: 15px;
+}
+img {
+    border-radius: 0%;      /*将所有图片边框圆角设置成50%，这样图片会形成圆形*/
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+h1 {font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;              /*字体加粗*/
+}
+p {
+    font-family: "Lora", serif;            /*同上，（lora是带衬线字体）*/
+}
+
+h3 {
+    font-family: "Arial", sans-serif;
+    font-weight: bolder;
+    color: gray;
+}
+
+a {
+    text-decoration: none;     /*去掉下划线*/
+    font-family: Arial, Helvetica, sans-serif;    /*同上*/
+    font-weight: bolder;
+}
+a:hover {               /*当鼠标悬停在链接上，连接的颜色会变成蓝色*/
+    color: blue;
+}
+.container {
+    width: 1100px;              /*容器宽度*/
+    margin: 40px auto;          /*容器外边距为30px，auto将容器居中于页面*/
+}
+
+@media (max-width: 900px){                   /*响应式设计*/
+    .container{
+        width: 720px;
+    }
+}
+
+.card-white {
+    background-color: rgb(255, 251, 230);
+    box-shadow: 0px 20px 10px rgba(0,0,0,0.4);     /*为卡片增加阴影， 0px表示水平方向无位移， 20px表示垂直方向阴影的距离  10px表示阴影模糊半径，rgba表示半透明的黑色阴影*/
+    border-radius: 5px;  /*圆角边框，半径为XX*/
+    padding: 50px;       /*内容与边框距离*/
+    text-align: center;  /*将卡片内的文本居中对齐*/
+    margin: 40px 120px;   /*设置卡片的外边距上下为XX，左右为XX*/
+}
+
+.btn-yellow {
+    background-color: rgb(252, 205, 42);
+    color: #fff;        /*字体颜色*/
+    padding: 10px 15px;   /*内边距上下和左右*/
+    border-radius: 30px;
+    border: 5px solid transparent;      /*按钮的边框像素厚*/
+}
+.btn-yellow:hover {
+    color: green;    /*字体颜色*/
+    border: 2px,solid, rgb(175, 200, 16);       /*边框变为2像素的实线*/
+    background-color: #fff;
+    padding: 0px;
+    transition: ease 0.3s;       /*过渡效果，时间*/
+    
+}
+
+.list-inline {
+    list-style: none;          /*去掉默认样式*/
+    padding-left: 0px;         /*这里表示去掉左边内边距，向左靠齐*/   
+}
+
+.list-inline li {
+    display: inline;    /*水平排列*/
+    font-size: 60px;
+    margin: 50px;
+}   
+
+.list-inline li i {
+    color: rgb(178, 161, 7);       /*图标颜色*/
+}
+
